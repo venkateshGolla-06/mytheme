@@ -1,0 +1,61 @@
+{% schema%}
+
+   {
+     "name": "img-banner",
+     "type": "section",
+     "class": "section",
+     "settings": [
+        {
+            "type": "image_picker",
+            "id": "fisrt-image",
+            "label": "select an image element",
+
+        },
+        {
+        "type": "paragraph",
+        "id": "paragraph-el",
+        "label": "enter an paragraph element",
+        "default": "here is my name"
+    
+    
+    }
+    {
+        "type": "select",
+        "id" : "image_position",
+        "options": [
+            { 
+            "value": "fisrt",
+            "label": "select any one"
+        
+        }
+        ,
+        {
+            "value": "second",
+            "label": "select one"
+        }
+        
+    ],
+    "default": "first",
+    "label": "select any one of the pic"
+
+    
+    }
+
+     ],
+     "presets": [
+        {
+          "name": "img-banner",
+          "blocks": [
+            {
+              "type": "image_picker"
+            },
+            {
+              "type": "select"
+            }
+          ]
+        }
+      ]
+
+}
+
+{%  endschema %}
